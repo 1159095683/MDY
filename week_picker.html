@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Week Picker</title>
+</head>
+<body>
+  <label for="week">Choose a week:</label>
+  <input type="week" id="week" name="week" />
+  <p id="output"></p>
+  <script>
+    const input = document.getElementById('week');
+    const output = document.getElementById('output');
+
+    input.addEventListener('change', () => {
+      output.textContent = `Selected week: ${input.value}`;
+    });
+  </script>
+</body>
+</html>
